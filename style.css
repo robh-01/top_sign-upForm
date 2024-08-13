@@ -1,12 +1,11 @@
 /* fonts */
 
 @font-face {
-    font-family: 'norsebold';
-    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
-         url('./fonts/norse-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "norsebold";
+  src: url("./fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("./fonts/norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* basic resetting */
@@ -51,5 +50,111 @@ h6 {
   overflow-wrap: break-word;
 }
 
-
 /* elements styles */
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.img-container {
+  flex: 0 0 40%;
+  background-image: url("./bg-image\ |\ Halie\ West.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo-container {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.logo-container > .logo {
+  height: 100px;
+  display: inline-block;
+}
+
+.logo-container > span {
+  color: white;
+  font-family: "norsebold";
+  font-size: 78px;
+}
+
+.img-container > p {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.img-container > p > a {
+  color: inherit;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container > * {
+  flex: 0;
+}
+
+.right-container > *:not(.form-container) {
+  margin-left: 30px;
+}
+
+.right-container > .heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 220px;
+  font-size: 18px;
+  margin-top: 80px;
+  font-weight: 600;
+}
+
+.form-container {
+  padding-left: 30px;
+  margin-top: 35px;
+}
+
+.form-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+form > span {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+form > span * {
+  flex: 0;
+}
+
+form > span > label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+input {
+  appearance: none;
+  height: 25px;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.068);
+}
